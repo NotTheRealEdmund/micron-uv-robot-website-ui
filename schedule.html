@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Schedule</title>
+		<link href="navBar.css" rel="stylesheet" type="text/css">
+  		<style>
+			#optionsTab {
+			  width: 500px;
+			  height: 200px;
+			  margin: 10px;
+			  padding: 20px;
+			  cursor: pointer;
+			  background: blue;
+			  border-radius: 25px;
+			  float: left;
+			}
+
+			.btn {
+  		  	  color: black;
+  		  	  padding: 14px 20px;
+  		  	  margin: 8px 0px;
+  		  	  border: none;
+  		  	  cursor: pointer;
+  		  	  width: 30%;
+		  	  border-radius: 10px;
+		  	  display: flex;
+  		  	  justify-content: center;
+			}
+			#addRoute {
+			  background-color: white;
+		  	  float: left;
+		  	  margin-left: 10%;
+			}
+			#autoGenerateRoute {
+			  background-color: white;
+		  	  float: right;
+		  	  margin-right: 10%;
+			}
+
+			#plusBtn {
+			  background-color: #98FB98; 
+			  cursor: pointer;
+			  border-radius: 4px;
+			}
+			#crossBtn {
+			  background-color: #ff726f; 
+			  cursor: pointer;
+			  border-radius: 4px;
+			}
+			#changeBtn {
+			  background-color: #FFFACD; 
+			  cursor: pointer;
+			  border-radius: 4px;
+			}
+
+			#myCanvas {
+			  float: right;
+			  background-color: gray;
+			  width: 600px;
+			  height: 600px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+  			<li><a href="./status.html">Status</a></li>
+  			<li><a class="active" href="./schedule.html">Schedules</a></li>
+  			<li><a href="./waypoint.html">Waypoints</a></li>
+  			<li><a href="./record.html">Records</a></li>
+			<li><a href="./setting.html">Setting</a></li>
+		</ul>
+
+		<div id="optionsTab">
+			<select name="first" id="first">
+    			  <option value="first">F10A Level 5 Office</option>
+  			</select>
+			<select name="second" id="second">
+    			  <option value="second">Day Mode</option>
+  			</select>
+			<br>
+			<br>
+			<select name="third" id="third">
+    			  <option value="third">Robot AAA</option>
+  			</select>
+			<select name="fourth" id="fourth">
+    			  <option value="fourth">Schedule 1</option>
+  			</select>
+			<button id="plusBtn"><b>+</b></button>
+			<button id="crossBtn"><b>X</b></button>
+			<br>
+			<br>
+			<input type="text" value="Everyday, 8:00am to 8:30am" size="27" readonly>
+			<button id="changeBtn"><b>Change timing</b></button>
+			<br>
+			<br>
+			<button id="addRoute" class="btn"><b>Add Route</b></button>
+			<button id="autoGenerateRoute" class="btn"><b>Auto generate route</b></button>
+		</div>
+
+		<canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+
+		<script>
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			ctx.font = "20px Arial";
+			ctx.fillStyle = 'white';
+			ctx.fillText("Floor Map", 110, 80);
+		</script>
+	</body>
+</html>

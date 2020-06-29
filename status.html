@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Status</title>
+  		<style>
+			html, body {
+			  height: 100%;
+			  margin: 0;
+			} 
+			body {
+			  position: relative;
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  border: 1px solid #e7e7e7;
+			  background-color: #4e589f;
+			}
+			li {
+			  float: left;
+			}
+			li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+			li a:hover:not(.active) {
+			  background-color: #ddd;
+			}
+			li a.active {
+			  color: white;
+			  background-color: blue;
+			}					
+
+			.robot {
+			  width: 500px;
+			  height: 200px;
+			  margin: 10px;
+			  padding: 20px;
+			  cursor: pointer;
+			}
+			#robot1 {
+			  background: #90EE90;
+			  border-radius: 25px;
+			}
+			#robot2 {
+			  background: yellow;
+			  border-radius: 25px;
+			}
+			#robot3 {
+			  background: pink;
+			  border-radius: 25px;
+			}
+			#robot4 {
+			  background: #90EE90;
+			  border-radius: 25px;
+			}
+			a {
+			  text-decoration: none;
+			  color: black;
+			}
+  		</style>
+	</head>
+	<body>
+		<ul>
+  			<li><a class="active" href="./status.html">Status</a></li>
+  			<li><a href="./schedule.html">Schedules</a></li>
+  			<li><a href="./waypoint.html">Waypoints</a></li>
+  			<li><a href="./record.html">Records</a></li>
+			<li><a href="./setting.html">Setting</a></li>
+		</ul>
+
+		<div id="robot1" class="robot">
+			<h2>Robot AAA</h2>
+			Status: Available
+			<br>
+			<br>
+			Location: F10A Level 5
+		</div>
+		<div id="robot2" class="robot">
+			<h2>Robot BBB</h2>
+			Status: In Mission
+			<br>
+			<br>
+			Location: F10A Level 4
+		</div>
+		<div id="robot3" class="robot">
+			<h2>Robot CCC</h2>
+			Status: Charging
+			<br>
+			<br>
+			Location: F10A Level 3
+		</div>
+		<div id="robot4" class="robot">
+			<h2>Robot DDD</h2>
+			Status: Available
+			<br>
+			<br>
+			Location: F10A Level 2
+		</div>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Robot AAA</title>
+  		<link href="navBar.css" rel="stylesheet" type="text/css">
+		<style>
+			#container {
+			  float: left;
+			}
+			.robot {
+			  width: 500px;
+			  height: 200px;
+			  margin: 10px;
+			  padding: 20px;
+			  cursor: pointer;
+			}
+			#robot1 {
+			  background: #90EE90;
+			  border-radius: 25px;
+			  border: 2px solid black;
+			}
+			#robot2 {
+			  background: yellow;
+			  border-radius: 25px;
+			}
+			#robot3 {
+			  background: pink;
+			  border-radius: 25px;
+			}
+			#robot4 {
+			  background: #90EE90;
+			  border-radius: 25px;
+			}
+
+			#myCanvas {
+			  float: right;
+			  background-color: gray;
+			  width: 600px;
+			  height: 600px;
+			}
+			#myCanvasLocation {
+			  float: right;
+			  background-color: #4e589f;
+			  width: 200px;
+			  height: 50px;
+			}
+  		</style>
+	</head>
+	<body>
+		<ul>
+  			<li><a class="active" href="./status.html">Status</a></li>
+  			<li><a href="./schedule.html">Schedules</a></li>
+  			<li><a href="./waypoint.html">Waypoints</a></li>
+  			<li><a href="./record.html">Records</a></li>
+			<li><a href="./setting.html">Setting</a></li>
+		</ul>
+
+		<div id="container">
+			<div id="robot1" class="robot">
+				<h2>Robot AAA</h2>
+				Status: Available
+				<br>
+				<br>
+				Battery Level: 100%
+				<br>
+				<br>
+				Disinfectant Solution Level: 80%
+				<br>
+				<br>
+				Module mounted: UV lamp, Disinfectant Spray, Robot Arm
+			</div>
+			<div id="robot2" class="robot">
+				<h2>Robot BBB</h2>
+				Status: In Mission
+				<br>
+				<br>
+				Location: F10A Level 4
+			</div>
+			<div id="robot3" class="robot">
+				<h2>Robot CCC</h2>
+				Status: Charging
+				<br>
+				<br>
+				Location: F10A Level 3
+			</div>
+			<div id="robot4" class="robot">
+				<h2>Robot DDD</h2>
+				Status: Available
+				<br>
+				<br>
+				Location: F10A Level 2
+			</div>
+		</div>
+
+		<canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+		<canvas id="myCanvasLocation">Your browser does not support the HTML5 canvas tag.</canvas>
+
+		<script>
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			ctx.font = "20px Arial";
+			ctx.fillStyle = 'white';
+			ctx.fillText("Floor Map", 110, 80);
+
+			var canvasLocation = document.getElementById("myCanvasLocation");
+			var ctx2 = canvasLocation.getContext("2d");
+			ctx2.font = "40px Arial";
+			ctx2.fillStyle = 'white';
+			ctx2.fillText("F10A Level 5", 30, 85); 
+		</script>
+	</body>
+</html>

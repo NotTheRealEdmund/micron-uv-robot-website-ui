@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Waypoints</title>
+		<link href="navBar.css" rel="stylesheet" type="text/css">
+  		<style>
+			#optionsTab {
+			  width: 500px;
+			  height: 200px;
+			  margin: 10px;
+			  padding: 20px;
+			  cursor: pointer;
+			  background: blue;
+			  border-radius: 25px;
+			  float: left;
+			}
+
+			.btn {
+  		  	  color: black;
+  		  	  padding: 14px 20px;
+  		  	  border: none;
+  		  	  cursor: pointer;
+  		  	  width: 30%;
+		  	  border-radius: 10px;
+		  	  display: flex;
+  		  	  justify-content: center;
+			  float: left;
+			  margin: 8px 8px;
+			}
+
+			#myCanvas {
+			  float: right;
+			  background-color: gray;
+			  width: 600px;
+			  height: 600px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+  			<li><a href="./status.html">Status</a></li>
+  			<li><a href="./schedule.html">Schedules</a></li>
+  			<li><a class="active" href="./waypoint.html">Waypoints</a></li>
+  			<li><a href="./record.html">Records</a></li>
+			<li><a href="./setting.html">Setting</a></li>
+		</ul>
+
+		<div id="optionsTab">
+			<select name="first" id="first">
+    			  <option value="first">F10A Level 5 Office</option>
+  			</select>
+			<br>
+			<br>
+			<select name="second" id="second">
+    			  <option value="second">Robot AAA</option>
+  			</select>
+			<select name="third" id="third">
+    			  <option value="third">Schedule 1</option>
+  			</select>
+			<br>
+			<br>
+			<button class="btn"><b>UV</b></button>
+			<button class="btn"><b>Fogging</b></button>
+			<button class="btn"><b>Purification</b></button>
+			<br>
+			<br>
+			<button class="btn"><b>Cleaning</b></button>
+			<button class="btn"><b>Mask Check</b></button>
+			<button class="btn"><b>Remove</b></button>
+		</div>
+
+		<canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+
+		<script>
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			ctx.font = "20px Arial";
+			ctx.fillStyle = 'white';
+			ctx.fillText("Floor Map", 110, 80);
+		</script>
+	</body>
+</html>

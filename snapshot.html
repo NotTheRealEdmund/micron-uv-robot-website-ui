@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-  		<title>Log</title>
+  		<title>Snap Shot</title>
 		<link href="navBar.css" rel="stylesheet" type="text/css">
   		<style>
 			#optionsTab {
@@ -31,9 +31,15 @@
 			}
 
 			#myCanvas {
+			  background-color: gray;
+			  width: 600px;
+			  height: 400px;
+			}
+
+			#container {	
 			  float: right;
-			  border: 3px solid black;
-			  width: 40%;
+			  display: flex;
+  			  flex-direction: column;
 			}
 		</style>
 	</head>
@@ -55,24 +61,17 @@
 			<a href="" class="btn"><b>download</b></a>
 		</div>
 
+		<div id="container">
 		<canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+		img_127.png
+		</div>
 
 		<script>
 			var canvas = document.getElementById("myCanvas");
 			var ctx = canvas.getContext("2d");
-			ctx.font = "10px Arial";
-			ctx.fillText("08 00 - Proceed with schedule 1.", 10, 10);
-			ctx.fillText("08 30 - Completed schedule 1.", 10, 20);
-			ctx.fillText("08 45 - Proceed to charging pad for charging at office B.", 10, 30);
-			ctx.fillText("12 00 - Proceed with schedule 2.", 10, 40);
-			ctx.fillText("12 15 - Unknown obstacle detected at office C, unable to", 10, 50);
-			ctx.fillText("            find new path. Administrator interference required.", 10, 60);
-			ctx.fillText("12 20 - Control taken over by administrator.", 10, 70);
-			ctx.fillText("14 00 - Unauthorised personnel detected at level 5 office D,", 10, 80);
-			ctx.fillText("            snap shot \"img_127.png\" recorded in photo.", 10, 90);
-			ctx.fillText("17 00 - Proceed with schedule 3.", 10, 100);
-			ctx.fillText("18 00 - Completed schedule 3. Disinfectant solution level", 10, 110);
-			ctx.fillText("            below 20%. Warning notification sent.", 10, 120);
+			ctx.font = "20px Arial";
+			ctx.fillStyle = 'white';
+			ctx.fillText("Snapshot Image", 80, 80);
 		</script>
 	</body>
 </html>

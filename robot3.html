@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-  		<title>Robot BBB</title>
+  		<title>Robot AAA</title>
   		<link href="navBar.css" rel="stylesheet" type="text/css">
 		<style>
 			#container {
@@ -22,11 +22,11 @@
 			#robot2 {
 			  background: yellow;
 			  border-radius: 25px;
-			  border: 2px solid black;
 			}
 			#robot3 {
 			  background: pink;
 			  border-radius: 25px;
+			  border: 2px solid black;
 			}
 			#robot4 {
 			  background: #90EE90;
@@ -76,34 +76,34 @@
 					<b>Disinfectant Solution Level: <span style="color:green;">80%</span></b>
 				</div>
 			</a>
-			<div id="robot2" class="robot">
-				<h2><u>Robot BBB</u></h2>
-				<b>Status: <span style="color:orange;">In Mission</span></b>
+			<a href="./robot2.html">
+				<div id="robot2" class="robot">
+					<h2><u>Robot BBB</u></h2>
+					<b>Status: <span style="color:orange;">In Mission</span></b>
+					<br>
+					<br>
+					<b>Location: F10A Level 4</b>
+					<br>
+					<br>
+					<b>Battery Level: <span style="color:red;">30%</span></b>
+					<br>
+					<br>
+					<b>Disinfectant Solution Level: <span style="color:orange;">50%</span></b>
+				</div>
+			</a>
+			<div id="robot3" class="robot">
+				<h2><u>Robot CCC</u></h2>
+				<b>Status: <span style="color:red;">Charging</span></b>
 				<br>
-				<b>Battery Level: <span style="color:red;">30%</span></b>
+				<b>Battery Level: <span style="color:orange;">50%</span></b>
 				<br>
-				<b>Disinfectant Solution Level: <span style="color:orange;">50%</span></b>
+				<b>Disinfectant Solution Level: <span style="color:red;">10%</span></b>
 				<br>
 				<b>Module mounted: UV lamp, Disinfectant Spray, Robot Arm</b>
 				<br>
 				<br>
-				<b>Zone: <span style="color:blue;">Blue Zone</span></b>
+				<b>Zone: <span style="color:red;">Red Zone</span></b>
 			</div>
-			<a href="./robot3.html">
-				<div id="robot3" class="robot">
-					<h2><u>Robot CCC</u></h2>
-					<b>Status: <span style="color:red;">Charging</span></b>
-					<br>
-					<br>
-					<b>Location: F10A Level 3</b>
-					<br>
-					<br>
-					<b>Battery Level: <span style="color:orange;">50%</span></b>
-					<br>
-					<br>
-					<b>Disinfectant Solution Level: <span style="color:red;">10%</span></b>
-				</div>
-			</a>
 			<a href="./robot4.html">
 				<div id="robot4" class="robot">
 					<h2><u>Robot DDD</u></h2>
@@ -135,7 +135,7 @@
 			var ctx2 = canvasLocation.getContext("2d");
 			ctx2.font = "40px Arial";
 			ctx2.fillStyle = 'white';
-			ctx2.fillText("F10A Level 4", 30, 85); 
+			ctx2.fillText("F10A Level 3", 30, 85); 
 		</script>
 	</body>
 </html>

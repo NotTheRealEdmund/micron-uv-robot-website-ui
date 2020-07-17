@@ -37,11 +37,8 @@
 			  color: black;
 			}
 
-			#myCanvas {
+			img {
 			  float: right;
-			  background-color: gray;
-			  width: 600px;
-			  height: 600px;
 			}
 			#myCanvasLocation {
 			  float: right;
@@ -122,16 +119,10 @@
 			</a>
 		</div>
 
-		<canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+		<img src="map.jpg" alt="Map">
 		<canvas id="myCanvasLocation">Your browser does not support the HTML5 canvas tag.</canvas>
 
 		<script>
-			var canvas = document.getElementById("myCanvas");
-			var ctx = canvas.getContext("2d");
-			ctx.font = "20px Arial";
-			ctx.fillStyle = 'white';
-			ctx.fillText("Floor Map", 110, 80);
-
 			var canvasLocation = document.getElementById("myCanvasLocation");
 			var ctx2 = canvasLocation.getContext("2d");
 			ctx2.font = "40px Arial";

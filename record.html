@@ -30,11 +30,8 @@
   		  	  justify-content: center;
 			}
 
-			#myCanvas {
+			img {
 			  float: right;
-			  background-color: gray;
-			  width: 600px;
-			  height: 600px;
 			}
 		</style>
 	</head>
@@ -73,14 +70,6 @@
 			<a href="./snapshot.html" class="btn"><b>View Snap Shot</b></a>
 		</div>
 
-		<canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
-
-		<script>
-			var canvas = document.getElementById("myCanvas");
-			var ctx = canvas.getContext("2d");
-			ctx.font = "20px Arial";
-			ctx.fillStyle = 'white';
-			ctx.fillText("Floor Map", 110, 80);
-		</script>
+		<img src="map.jpg" alt="Map">
 	</body>
 </html>

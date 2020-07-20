@@ -16,13 +16,8 @@
 			  float: left;
 			}
 			
-			#canvasContainer {
+			img {
 			  float: right;
-			}
-			#cameraCanvas, #lidarCanvas {
-			  background-color: gray;
-			  width: 600px;
-			  height: 340px;
 			}
 		</style>
 	</head>
@@ -42,27 +37,18 @@
     			  <option value="first">Robot CCC</option>
     			  <option value="first">Robot DDD</option>
   			</select>
-		</div>
-		
-		<div id="canvasContainer">
-			<canvas id="cameraCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
 			<br>
-			<canvas id="lidarCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+			<br>
+			<span style="color:white;">Press the Up arrow key to move the robot forward.</span><br>
+			<span style="color:white;">Press the Down arrow key to move the robot backward.</span><br>
+			<span style="color:white;">Press the Left arrow key to move the robot to the left.</span><br>
+			<span style="color:white;">Press the Right arrow key to move the robot to the right.</span><br>
+			<span style="color:white;">Press the A arrow key for anti-clockwise yaw rotation.</span><br>
+			<span style="color:white;">Press the D arrow key for clockwise yaw rotation.</span><br>
+			<span style="color:white;">Press the spacebar to take a snapshot.</span><br>
 		</div>
 
-		<script>
-			var canvas = document.getElementById("cameraCanvas");
-			var ctx = canvas.getContext("2d");
-			ctx.font = "20px Arial";
-			ctx.fillStyle = 'white';
-			ctx.fillText("Camera Video", 85, 80);
-
-			var canvas = document.getElementById("lidarCanvas");
-			var ctx = canvas.getContext("2d");
-			ctx.font = "20px Arial";
-			ctx.fillStyle = 'white';
-			ctx.fillText("Lidar Video", 100, 80);
-		</script>
-		</script>
+		<img src="map.jpg" alt="Map">
+		<img src="camera.jpg" alt="Camera">
 	</body>
 </html>

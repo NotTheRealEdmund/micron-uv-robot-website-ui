@@ -30,16 +30,8 @@
   		  	  justify-content: center;
 			}
 
-			#myCanvas {
-			  background-color: gray;
-			  width: 600px;
-			  height: 400px;
-			}
-
-			#container {	
+			#container {
 			  float: right;
-			  display: flex;
-  			  flex-direction: column;
 			}
 		</style>
 	</head>
@@ -60,18 +52,11 @@
 			<br>
 			<a href="" class="btn"><b>download</b></a>
 		</div>
-
+		
 		<div id="container">
-		<canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
-		img_127.png
+			<img src="camera.jpg" alt="Camera">
+			<br>
+			img_127.png
 		</div>
-
-		<script>
-			var canvas = document.getElementById("myCanvas");
-			var ctx = canvas.getContext("2d");
-			ctx.font = "20px Arial";
-			ctx.fillStyle = 'white';
-			ctx.fillText("Snapshot Image", 80, 80);
-		</script>
 	</body>
 </html>

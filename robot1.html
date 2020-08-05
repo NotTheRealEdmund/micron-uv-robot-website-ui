@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-  		<title>Robot AAA</title>
+  		<title>Robot BBB</title>
   		<link href="navBar.css" rel="stylesheet" type="text/css">
 		<style>
 			#container {
@@ -37,11 +37,7 @@
 			  color: black;
 			}
 
-			img {
-			  float: right;
-			}
 			#myCanvasLocation {
-			  float: right;
 			  background-color: #4e589f;
 			  width: 200px;
 			  height: 50px;
@@ -58,19 +54,18 @@
 		</ul>
 
 		<div id="container">
-			<div id="robot1" class="robot">
-				<h2><u>Robot AAA</u></h2>
-				<b>Status: <span style="color:green;">Available</span></b>
-				<br>
-				<b>Battery Level: <span style="color:green;">100%</span></b>
-				<br>
-				<b>Disinfectant Solution Level: <span style="color:green;">80%</span></b>
-				<br>
-				<b>Module mounted: UV lamp, Disinfectant Spray, Robot Arm</b>
-				<br>
-				<br>
-				<b>Zone: <span style="color:red;">Red Zone</span></b>
-			</div>
+			<a href="./robot1.html">
+				<div id="robot1" class="robot">
+					<h2><u>Robot AAA</u></h2>
+					<b>Status: <span style="color:green;">Available</span></b>
+					<br>
+					<br>
+					<b>Location: F10A Level 5</b>
+					<br>
+					<br>
+					<b>Battery Level: <span style="color:green;">100%</span></b>
+				</div>
+			</a>
 			<a href="./robot2.html">
 				<div id="robot2" class="robot">
 					<h2><u>Robot BBB</u></h2>
@@ -81,9 +76,6 @@
 					<br>
 					<br>
 					<b>Battery Level: <span style="color:red;">30%</span></b>
-					<br>
-					<br>
-					<b>Disinfectant Solution Level: <span style="color:orange;">50%</span></b>
 				</div>
 			</a>
 			<a href="./robot3.html">
@@ -96,9 +88,6 @@
 					<br>
 					<br>
 					<b>Battery Level: <span style="color:orange;">50%</span></b>
-					<br>
-					<br>
-					<b>Disinfectant Solution Level: <span style="color:red;">10%</span></b>
 				</div>
 			</a>
 			<a href="./robot4.html">
@@ -111,14 +100,12 @@
 					<br>
 					<br>
 					<b>Battery Level: <span style="color:green;">100%</span></b>
-					<br>
-					<br>
-					<b>Disinfectant Solution Level: <span style="color:green;">100%</span></b>
 				</div>
 			</a>
 		</div>
-		
+
 		<img src="map.jpg" alt="Map">
+		<br>
 		<canvas id="myCanvasLocation">Your browser does not support the HTML5 canvas tag.</canvas>
 
 		<script>

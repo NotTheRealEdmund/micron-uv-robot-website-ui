@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Waypoints</title>
+		<link href="navBar.css" rel="stylesheet" type="text/css">
+  		<style>
+			body {
+			  background-color: #00255e;
+			}
+			#optionsTab {
+			  width: 500px;
+			  height: 200px;
+			  margin: 10px;
+			  padding: 20px;
+			  cursor: pointer;
+			  background: blue;
+			  border-radius: 25px;
+			  float: left;
+			  background: #004d7c;
+			}
+
+			.btn {
+  		  	  color: black;
+  		  	  padding: 14px 20px;
+  		  	  border: none;
+  		  	  cursor: pointer;
+  		  	  width: 30%;
+		  	  border-radius: 10px;
+		  	  display: flex;
+  		  	  justify-content: center;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+  			<li><a href="./status.html">Status</a></li>
+  			<li><a href="./schedule.html">Schedules</a></li>
+  			<li><a class="active" href="./waypoint.html">Waypoints</a></li>
+  			<li><a href="./record.html">Records</a></li>
+			<li><a href="./remote.html">Remote</a></li>
+		</ul>
+
+		<div id="optionsTab">
+			<select name="first" id="first">
+    			  <option value="first">F10A Level 1 Office</option>
+    			  <option value="first">F10A Level 2 Office</option>
+    			  <option value="first" selected>F10A Level 3 Office</option>
+    			  <option value="first">F10A Level 4 Office</option>
+			  <option value="first">F10A Level 5 Office</option>
+  			</select>
+			<br>
+			<br>
+			<select name="second" id="second">
+    			  <option value="second" selected>Robot AAA</option>
+			  <option value="second">Robot BBB</option>
+			  <option value="second">Robot CCC</option>
+			  <option value="second">Robot DDD</option>
+  			</select>
+			<select name="third" id="third">
+    			  <option value="third" selected>Schedule 1</option>
+			  <option value="third">Schedule 2</option>
+			  <option value="third">Schedule 3</option>
+  			</select>
+			<br>
+			<br>
+			<button class="btn"><b>UV</b></button>
+			<br>
+			<button class="btn"><b>Remove</b></button>
+		</div>
+
+		<img src="map3.jpg" alt="Map">
+	</body>
+</html>

@@ -5,6 +5,9 @@
   		<title>Robot AAA</title>
   		<link href="navBar.css" rel="stylesheet" type="text/css">
 		<style>
+			body {
+			  background-color: #00255e;
+			}
 			#container {
 			  float: left;
 			}
@@ -16,12 +19,14 @@
 			  cursor: pointer;
 			}
 			#robot1 {
-			  background: #90EE90;
+			  color: #dbe0e2;
+			  background: #004d7c;
 			  border-radius: 25px;
-			  border: 2px solid black;
+			  border: 3px solid #dbe0e2;;
 			}
 			#robot2 {
-			  background: #ADD8E6;
+			  color: #dbe0e2;
+			  background: #004d7c;
 			  border-radius: 25px;
 			}
 			#robot3 {
@@ -56,23 +61,23 @@
 		<div id="container">
 			<a href="./robot1.html">
 				<div id="robot1" class="robot">
-					<h2><u>Robot AAA</u></h2>
-					<b>Status: <span style="color:green;">Available</span></b>
+					<h2>Robot AAA</h2>
+					<b>Status: <span style="color:#69d691;">Available</span></b>
 					<br>
 					<br>
-					<b>Location: F10A Level 5</b>
+					<b>Location: F10A Level 3</b>
 					<br>
 					<br>
-					<b>Battery Level: <span style="color:green;">100%</span></b>
+					<b>Battery Level: <span style="color:#69d691;">100%</span></b>
 				</div>
 			</a>
 			<a href="./robot2.html">
 				<div id="robot2" class="robot">
-					<h2><u>Robot BBB</u></h2>
+					<h2>Robot BBB</h2>
 					<b>Status: <span style="color:orange;">In Mission</span></b>
 					<br>
 					<br>
-					<b>Location: F10A Level 4</b>
+					<b>Location: F10A Level 2</b>
 					<br>
 					<br>
 					<b>Battery Level: <span style="color:red;">30%</span></b>
@@ -113,7 +118,7 @@
 			var ctx2 = canvasLocation.getContext("2d");
 			ctx2.font = "40px Arial";
 			ctx2.fillStyle = 'white';
-			ctx2.fillText("F10A Level 5", 30, 85); 
+			ctx2.fillText("F10A Level 3", 30, 85); 
 		</script>
 	</body>
 </html>

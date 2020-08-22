@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Remote</title>
+		<link href="navBar.css" rel="stylesheet" type="text/css">
+  		<style>
+			body {
+			  background-color: #00255e;
+			}
+			#optionsTab {
+			  width: 500px;
+			  height: 200px;
+			  margin: 10px;
+			  padding: 20px;
+			  cursor: pointer;
+			  background: blue;
+			  border-radius: 25px;
+			  float: left;
+			  background: #004d7c;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+  			<li><a href="./status.html">Status</a></li>
+  			<li><a href="./schedule.html">Schedules</a></li>
+  			<li><a href="./waypoint.html">Waypoints</a></li>
+  			<li><a href="./record.html">Records</a></li>
+			<li><a class="active" href="./remote.html">Remote</a></li>
+		</ul>
+
+		<div id="optionsTab">
+			<select name="first" id="first">
+    			  <option value="first">Robot AAA</option>
+    			  <option value="first">Robot BBB</option>
+    			  <option value="first">Robot CCC</option>
+    			  <option value="first">Robot DDD</option>
+  			</select>
+			<br>
+			<br>
+			<span style="color:white;">Press the Up arrow key to move the robot forward.</span><br>
+			<span style="color:white;">Press the Down arrow key to move the robot backward.</span><br>
+			<span style="color:white;">Press the Left arrow key to move the robot to the left.</span><br>
+			<span style="color:white;">Press the Right arrow key to move the robot to the right.</span><br>
+			<span style="color:white;">Press the A key for anti-clockwise yaw rotation.</span><br>
+			<span style="color:white;">Press the D key for clockwise yaw rotation.</span><br>
+			<span style="color:white;">Press the spacebar to take a snapshot.</span><br>
+			<br><br><br><br>
+			<img src="camera.jpg" alt="Camera">
+		</div>
+
+		<img src="map.jpg" alt="Map">
+	</body>
+</html>
